@@ -11,7 +11,7 @@ page-home {
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
   }
-  h2 {
+  .logo-with-name h2 {
     font-family: 'Noto Serif', 'sans-serif';
     display: inline;
     color: #ed3269;
@@ -19,24 +19,95 @@ page-home {
     letter-spacing: 15px;
     margin: 0 10px 0 0;
   }
-  span {
+  .logo-with-name span {
     color: #ffffff;
     background: linear-gradient(90deg, #f05f3e, #ed3269);
     padding: 2px 12px 2px 12px;
     border-radius: 20px;
   }
-  p {
+  .logo-with-name p {
+    color: #000000 !important;
     font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: bold;
   }
-  .nextpage {
-    position: absolute;
-    top: 90%;
-    right: 10%;
-    .icon {
-      font-size: 40px;
-      color: #ed3269;
+  .swiper-pagination-bullet {
+    background: #ed3269 !important;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ed3269;
+    opacity: 1;
+  }
+  .slider {
+    color: #ffffff;
+    padding: 0 25px 0 25px !important;
+  }
+  .slider .top {
+    margin-top: 170px;
+  }
+  .slider .bottom {
+    margin-top: 150px;
+  }
+  .slider h1 {
+    font-size: 130%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .slider .top p {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .slider .bottom p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .slider .socialshare button {
+    font-size: 16px;
+    padding: 15px 70px 15px 70px;
+  }
+  #slider1 {
+    background: transparent url("../assets/slider-1.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #slider2 {
+    background: transparent url("../assets/slider-2.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #slider3 {
+    background: transparent url("../assets/slider-3.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  @media only screen and (max-width: 320px) {
+    .slider .bottom {
+      margin-top: 100px;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .slider .socialshare button {
+      padding: 15px 60px 15px 60px;
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .logo-with-name p {
+      text-indent: 40px;
+    }
+    .slider h1 {
+      font-size: 400%;
+    }
+    .slider .top p {
+      font-size: 21px;
+    }
+    .slider .bottom p {
+      font-size: 20px;
+    }
+    .slider .socialshare button {
+      font-size: 30px;
+      padding: 30px 110px 30px 110px;
     }
   }
 }

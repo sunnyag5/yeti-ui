@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { CityPage } from "../city/city";
-import { TabsPage } from "../tabs/tabs";
-
 /**
- * Generated class for the SharePage page.
+ * Generated class for the HashtagPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,20 +10,16 @@ import { TabsPage } from "../tabs/tabs";
 
 @IonicPage()
 @Component({
-  selector: 'page-share',
-  templateUrl: 'share.html',
+  selector: 'page-hashtag',
+  templateUrl: 'hashtag.html',
 })
-export class SharePage {
+export class HashtagPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SharePage');
-  }
-
-  goToNextPage() {
-    this.navCtrl.push(TabsPage);
+    console.log('ionViewDidLoad HashtagPage');
   }
 
 }

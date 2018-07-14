@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { CityPage } from "../city/city";
-import { TabsPage } from "../tabs/tabs";
+import { SignupPage } from "../signup/signup";
 
 /**
- * Generated class for the SharePage page.
+ * Generated class for the LoginPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,20 +12,20 @@ import { TabsPage } from "../tabs/tabs";
 
 @IonicPage()
 @Component({
-  selector: 'page-share',
-  templateUrl: 'share.html',
+  selector: 'page-login',
+  templateUrl: 'login.html',
 })
-export class SharePage {
+export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SharePage');
+    console.log('ionViewDidLoad LoginPage');
   }
 
-  goToNextPage() {
-    this.navCtrl.push(TabsPage);
-  }
+    doSignUp(): void {
+        this.navCtrl.push(SignupPage);
+    }
 
 }

@@ -1,0 +1,164 @@
+page-city {
+  ion-header {
+    border: 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+  }
+  .toolbar-background-md, .toolbar-background-ios {
+    background: linear-gradient(90deg, #ed3269, #f05f3e);
+  }
+  .toolbar-title-md {
+    letter-spacing: 1px;
+  }
+  ion-searchbar.searchbar-md {
+    display: block !important;
+    max-width: 100% !important;
+    /*position: fixed;*/
+    z-index: 999;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  input:-moz-placeholder {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  input:-ms-input-placeholder {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .pics ion-row:first-child {
+    margin: 20px 0 0 0;
+  }
+  .city-pic {
+    position: relative;
+  }
+  .city-pic img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .city-pic p {
+    font-size: 15px;
+    text-align: left;
+    text-indent: 10px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .city-pic span {
+    color: #8c8c8c;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 10px;
+    display: block;
+    letter-spacing: 1px;
+  }
+  .city-pic .checkmark {
+    display: none;
+  }
+  .active img {
+    -webkit-filter: sepia(30%); /* Safari 6.0 - 9.0 */
+    filter: sepia(30%);
+    opacity: 0.4;
+  }
+  .active .checkmark {
+    display: block;
+    font-size: 40px;
+    color: #ed3269;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .active p {
+    color: #ed3269;
+  }
+  .nextpage {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    button {
+      background: linear-gradient(90deg, #ed3269, #f05f3e);
+      letter-spacing: 3px;
+      box-shadow: 0 5px 30px rgba(136, 136, 136, 0.6);
+      padding: 25px 140px 25px 140px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .city-pic img {
+      width: 150px !important;
+      height: 222px !important;
+    }
+    .city-pic p {
+      text-indent: 0 !important;
+    }
+    .city-pic span {
+      text-indent: 0 !important;
+    }
+    .nextpage button {
+      padding: 20px 100px 20px 100px !important;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {}
+
+  @media only screen and (max-width: 375px) {
+    .city-pic img {
+      width: 160px !important;
+      height: 237px !important;
+    }
+    .city-pic p {
+      text-indent: 6px !important;
+    }
+    .city-pic span {
+      text-indent: 6px !important;
+    }
+    .active .checkmark {
+      font-size: 30px;
+    }
+    .nextpage button {
+      padding: 20px 120px 20px 120px;
+    }
+  }
+
+  @media only screen and (max-width: 411px) {}
+
+  @media only screen and (max-width: 414px) {
+    .city-pic img {
+      width: 180px;
+      height: 266px;
+    }
+    .city-pic p {
+      text-indent: 10px;
+    }
+    .city-pic span {
+      text-indent: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 760px) {
+    .city-pic img {
+      width: 340px !important;
+      height: 503px !important;
+    }
+    .city-pic p {
+      font-size: 25px;
+      text-indent: 15px !important;
+    }
+    .city-pic span {
+      font-size: 24px;
+      text-indent: 15px !important;
+    }
+    .nextpage button {
+      font-size: 25px;
+      padding: 35px 300px 35px 300px;
+    }
+
+    .active .checkmark {
+      font-size: 60px;
+    }
+  }
+}

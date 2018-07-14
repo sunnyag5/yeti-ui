@@ -1,87 +1,32 @@
 page-share {
-  .swiper-pagination-bullet {
-    background: white;
-    opacity: 0.5;
+  .toolbar-background-md, .toolbar-background-ios {
+    background: linear-gradient(90deg, #ed3269, #f05f3e);
   }
-
-  .swiper-pagination-bullet-active {
-    background: white;
-    opacity: 1;
-  }
-  .slider {
-    color: #ffffff;
-    padding: 0 25px 0 25px !important;
-  }
-  .slider .top {
-    margin-top: 170px;
-  }
-  .slider .bottom {
-    margin-top: 150px;
-  }
-  .slider h1 {
-    font-size: 130%;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
-  .slider .top p {
-    font-size: 15px;
+  .toolbar-title-md {
     letter-spacing: 1px;
   }
-  .slider .bottom p {
-    font-size: 14px;
-    letter-spacing: 1px;
+  h1 {
+    font-size: 200%;
   }
-  .slider .socialshare button {
-    font-size: 16px;
-    padding: 15px 70px 15px 70px;
+  .share-icon {
+    font-size: 4em;
+    line-height: 1;
   }
-  #slider1 {
-    background: transparent url("../assets/slider-1.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-  #slider2 {
-    background: transparent url("../assets/slider-2.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-  #slider3 {
-    background: transparent url("../assets/slider-3.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-  .nextpage {
-    position: absolute;
-    top: 90%;
-    right: 10%;
-    .icon {
-      font-size: 40px;
-      color: #ed3269;
+  .card-style {
+    .person-icon {
+      font-size: 3em;
+      line-height: 1;
     }
-  }
-  @media only screen and (max-width: 360px) {
-    .slider .socialshare button {
-      padding: 15px 60px 15px 60px;
+    .social-icon {
+      font-size: 2.5em;
+      line-height: 1;
     }
-  }
-  @media only screen and (max-width: 320px) {
-    .slider .socialshare button {
-      padding: 15px 50px 15px 50px;
+    h1 {
+      font-size: 180%;
     }
-  }
-  @media only screen and (min-width: 760px) {
-    .slider h1 {
-      font-size: 400%;
-    }
-    .slider .top p {
-      font-size: 21px;
-    }
-    .slider .bottom p {
-      font-size: 20px;
-    }
-    .slider .socialshare button {
-      font-size: 30px;
-      padding: 15px 110px 15px 110px;
+    p {
+      font-size: 16px;
+      letter-spacing: 1px;
     }
   }
 }

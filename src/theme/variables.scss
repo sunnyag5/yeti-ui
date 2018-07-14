@@ -39,11 +39,15 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
+  mediumdark: #8c8c8c,
+  email:      #603560,
+  message:    #1daae4,
   facebook:   #3B5998,
   twitter:    #55acee,
   whatsapp:   #34AF23,
-  message:    #1daae4,
-  lightest:   #ffffff
+  lightest:   #ffffff,
+  theme1:     #ed3269,
+  theme2:     #f05f3e
 );
 
 
@@ -76,6 +80,37 @@ $colors: (
 // default are overridden.
 
 @import "ionic.theme.default";
+
+$toolbar-md-title-font-size: 1.7rem;
+$toolbar-md-title-text-color: #ffffff;
+$toolbar-md-button-font-size: 1.7rem;
+
+$searchbar-md-input-search-icon-color: #ed3269;
+$searchbar-md-input-search-icon-size: 30px;
+$searchbar-md-input-width: 100%;
+$searchbar-md-input-height: auto;
+$searchbar-md-input-margin: 0;
+$searchbar-md-input-line-height: 4rem;
+//$searchbar-md-input-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .14);
+$searchbar-md-input-placeholder-color: #b3b3b3;
+$searchbar-md-input-text-color: #b3b3b3;
+$searchbar-md-input-border-radius: 7px;
+$searchbar-md-input-clear-icon-color: #ed3269;
+
+$tabs-background: #ffffff;
+$tabs-md-tab-text-color-active: #ed3269;
+$tabs-md-tab-icon-color: rgba(0, 0, 0, 0.6);
+$tabs-md-tab-icon-color-active: #ed3269;
+$tabs-md-tab-icon-size: 2.6rem;
+
+$label-md-text-color: #ed3269;
+$label-md-text-color-focused: #ed3269;
+
+$card-md-border-radius: 7px;
+$card-md-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+
+$fab-md-background-color: #ed3269;
+$fab-md-background-color-activated: #f05f3e;
 
 
 // Ionicons

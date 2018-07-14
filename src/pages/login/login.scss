@@ -1,0 +1,27 @@
+page-login {
+  ion-header {
+    border: 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+  }
+  .toolbar-background-md, .toolbar-background-ios {
+    background: linear-gradient(90deg, #ed3269, #f05f3e);
+  }
+  .toolbar-title-md {
+    letter-spacing: 1px;
+  }
+  button {
+    letter-spacing: 2px;
+    box-shadow: 0 5px 20px rgba(136, 136, 136, 0.4);
+  }
+  .login button {
+    background: linear-gradient(90deg, #ed3269, #f05f3e);
+    padding: 20px 140px 20px 140px !important;
+  }
+  .font-2x {
+    font-size: 3em;
+    line-height: 1;
+  }
+  a {
+    color: #ed3269 !important;
+  }
+}
