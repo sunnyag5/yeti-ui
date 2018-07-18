@@ -1,0 +1,607 @@
+<!--
+  Generated template for the EventlistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar text-center>
+    <ion-title>Plan in New York</ion-title>
+  </ion-navbar>
+
+  <ion-segment [(ngModel)]="plan">
+    <ion-segment-button value="you">
+      For You
+    </ion-segment-button>
+    <ion-segment-button value="trend">
+      Trending
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-header>
+
+
+<ion-content no-padding>
+
+  <div [ngSwitch]="plan">
+
+    <div [hidden]="plan !== 'you'">
+
+        <ion-row margin-top>
+
+            <ion-col col-12 class="location">
+                <ion-card text-center>
+                    <ion-card-content>
+                        <p>
+                            <ion-icon name="md-pin"></ion-icon>&nbsp;&nbsp;
+                            See All Events Around You - 10km
+                        </p>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+
+        </ion-row>
+
+        <!--<div class="event">
+
+            <div class="event-img">
+                <img src="../../assets/nightlife-event.jpg" alt=""/>
+                <ion-icon name="md-heart" class="fav like"></ion-icon>
+                <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
+            </div>
+
+            <ion-card class="event-info">
+                <ion-row class="star-rating" margin-horizontal margin-top>
+
+                    <ion-col col-6 text-left>
+                        <span class="trend-hash">#nightlife</span>
+                    </ion-col>
+
+                    <ion-col col-6 text-right>
+                        $20
+                    </ion-col>
+
+                </ion-row>
+
+                <ion-row>
+                    <ion-col col-12>
+                        <h1 margin-horizontal>Quiet Clubbing VIP Heated Rooftop Party</h1>
+                        <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
+                        <ion-icon name="md-star" color="theme1"></ion-icon>
+                        <ion-icon name="md-star" color="theme1"></ion-icon>
+                        <ion-icon name="md-star" color="theme1"></ion-icon>
+                        <ion-icon name="md-star-half" color="theme1"></ion-icon>&nbsp;
+                        <span class="liked-count">1.3k</span>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row class="event-place" margin-horizontal>
+
+                    <ion-col col-sm-10 text-left>
+                        <ion-icon name="md-pin"></ion-icon>&nbsp;
+                        <span class="address">605 W 48th Street, Manhattan</span>
+                    </ion-col>
+
+                    <ion-col col-sm-2 text-right>
+                        <span class="distance">10km</span>
+                    </ion-col>
+
+                </ion-row>
+
+                <ion-row class="event-attendance" margin-horizontal margin-bottom>
+
+                    <ion-col col-sm-10 text-left>
+                        <ion-icon name="md-film"></ion-icon>&nbsp;
+                        <span class="attendance">2.5k/10k Attending</span>
+                    </ion-col>
+
+                    <ion-col col-sm-2 text-right>
+                        <span class="attend-users">10km</span>
+                    </ion-col>
+
+                </ion-row>
+            </ion-card>
+        </div>-->
+
+        <div class="event" margin-bottom>
+
+            <ion-row class="event-img no-fav">
+
+                <ion-col text-center>
+                    <ion-card>
+                        <img src="../../assets/nightlife-event.jpg" alt="" width="260" height="225"/>
+                        <ion-icon name="md-heart" class="fav like"></ion-icon>
+                        <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row class="star-rating" margin-horizontal>
+
+                <ion-col col-6 text-left>
+                    <span class="trend-hash">#nightlife</span>
+                </ion-col>
+
+                <ion-col col-6 text-right>
+                    <span class="cost">$20</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-12>
+                    <h3 margin-horizontal>Quiet Clubbing VIP Heated Rooftop Party</h3>
+                    <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star-half" color="theme1"></ion-icon>&nbsp;
+                    <span class="liked-count">2.5k</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="event-place" margin-horizontal>
+
+                <ion-col col-8 text-left>
+                    <ion-icon name="md-pin"></ion-icon>&nbsp;
+                    <span class="address">605 W 48th Street, Manhattan</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span class="distance">10km</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row class="event-attendance" margin-horizontal>
+
+                <ion-col col-8 text-left>
+                    <ion-icon name="md-film"></ion-icon>&nbsp;
+                    <span class="attendance">2.5k/10k Attending</span>
+                </ion-col>
+
+                <ion-col col-4 text-right class="users">
+                    <ion-avatar class="user1">
+                        <img src="../../assets/user1.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user2">
+                        <img src="../../assets/user2.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user3">
+                        <img src="../../assets/user3.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user4">
+                        <img src="../../assets/user4.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user5">
+                        <img src="../../assets/user5.jpg" alt=""/>
+                    </ion-avatar>
+                </ion-col>
+
+            </ion-row>
+
+        </div>
+
+        <div class="event" margin-bottom>
+
+            <ion-row class="event-img add-to-fav">
+
+                <ion-col text-center>
+                    <ion-card>
+                        <img src="../../assets/fashion-event1.jpg" alt="" width="260" height="225"/>
+                        <ion-icon name="md-heart" class="fav like"></ion-icon>
+                        <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
+                        <ion-list no-lines>
+                            <ion-item text-center color="primary">
+                                <ion-icon name="md-time"></ion-icon>&nbsp;
+                                7 Days 10 Hrs 08 Mins 45 Secs
+                            </ion-item>
+                        </ion-list>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row class="star-rating" margin-horizontal>
+
+                <ion-col col-6 text-left>
+                    <span class="trend-hash">#fashion</span>
+                </ion-col>
+
+                <ion-col col-6 text-right>
+                    <span class="cost">$35</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-12>
+                    <h3 margin-horizontal>&quot;Bottled Art&quot; Wine Painting Nigh</h3>
+                    <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star-outline" color="theme1"></ion-icon>&nbsp;
+                    <span class="liked-count">1.3k</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="event-place" margin-horizontal>
+
+                <ion-col col-8 text-left>
+                    <ion-icon name="md-pin"></ion-icon>&nbsp;
+                    <span class="address">The Grand Connaught Rooms</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span class="distance">3.5km</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row class="event-attendance" margin-horizontal>
+
+                <ion-col col-8 text-left>
+                    <ion-icon name="md-film"></ion-icon>&nbsp;
+                    <span class="attendance">2568/10k Attending</span>
+                </ion-col>
+
+                <ion-col col-4 text-right class="users">
+                    <ion-avatar class="user1">
+                        <img src="../../assets/user1.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user2">
+                        <img src="../../assets/user2.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user3">
+                        <img src="../../assets/user3.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user4">
+                        <img src="../../assets/user4.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user5">
+                        <img src="../../assets/user5.jpg" alt=""/>
+                    </ion-avatar>
+                </ion-col>
+
+            </ion-row>
+
+        </div>
+
+        <div class="event" margin-bottom>
+
+            <ion-row class="event-img no-fav">
+
+                <ion-col text-center>
+                    <ion-card>
+                        <img src="../../assets/convention-event1.jpg" alt="" width="260" height="225"/>
+                        <ion-icon name="md-heart" class="fav like"></ion-icon>
+                        <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row class="star-rating" margin-horizontal>
+
+                <ion-col col-6 text-left>
+                    <span class="trend-hash">#convention</span>
+                </ion-col>
+
+                <ion-col col-6 text-right>
+                    <span class="cost">$10</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-12>
+                    <h3 margin-horizontal>APEC Business Advisory Council</h3>
+                    <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star" color="theme1"></ion-icon>
+                    <ion-icon name="md-star-outline" color="theme1"></ion-icon>&nbsp;
+                    <span class="liked-count">1.5k</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="event-place" margin-horizontal>
+
+                <ion-col col-8 text-left>
+                    <ion-icon name="md-pin"></ion-icon>&nbsp;
+                    <span class="address">Sheraton New York Times Square Hotel</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span class="distance">5km</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row class="event-attendance" margin-horizontal>
+
+                <ion-col col-8 text-left>
+                    <ion-icon name="md-film"></ion-icon>&nbsp;
+                    <span class="attendance">3.5k/10k Attending</span>
+                </ion-col>
+
+                <ion-col col-4 text-right class="users">
+                    <ion-avatar class="user1">
+                        <img src="../../assets/user1.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user2">
+                        <img src="../../assets/user2.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user3">
+                        <img src="../../assets/user3.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user4">
+                        <img src="../../assets/user4.jpg" alt=""/>
+                    </ion-avatar>
+                    <ion-avatar class="user5">
+                        <img src="../../assets/user5.jpg" alt=""/>
+                    </ion-avatar>
+                </ion-col>
+
+            </ion-row>
+
+        </div>
+
+
+    </div>
+
+      <div [hidden]="plan !== 'trend'">
+
+          <div class="event" margin-top margin-bottom>
+
+              <ion-row class="event-img no-fav">
+
+                  <ion-col text-center>
+                      <ion-card>
+                          <img src="../../assets/cultural-event.jpg" alt="" width="260" height="225"/>
+                          <ion-icon name="md-heart" class="fav like"></ion-icon>
+                          <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
+                      </ion-card>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row class="star-rating" margin-horizontal>
+
+                  <ion-col col-6 text-left>
+                      <span class="trend-hash">#culture</span>
+                  </ion-col>
+
+                  <ion-col col-6 text-right>
+                      <span class="cost">$30</span>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-12>
+                      <h3 margin-horizontal>Sculpture Without Sight Experience</h3>
+                      <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>
+                      <ion-icon name="md-star-outline" color="theme1"></ion-icon>&nbsp;
+                      <span class="liked-count">1.3k</span>
+                  </ion-col>
+              </ion-row>
+
+              <ion-row class="event-place" margin-horizontal>
+
+                  <ion-col col-8 text-left>
+                      <ion-icon name="md-pin"></ion-icon>&nbsp;
+                      <span class="address">812 Thatcher Court Yonkers...</span>
+                  </ion-col>
+
+                  <ion-col col-4 text-right>
+                      <span class="distance">4km</span>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row class="event-attendance" margin-horizontal>
+
+                  <ion-col col-8 text-left>
+                      <ion-icon name="md-film"></ion-icon>&nbsp;
+                      <span class="attendance">19/10k Attending</span>
+                  </ion-col>
+
+                  <ion-col col-4 text-right class="users">
+                      <ion-avatar class="user1">
+                          <img src="../../assets/user1.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user2">
+                          <img src="../../assets/user2.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user3">
+                          <img src="../../assets/user3.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user4">
+                          <img src="../../assets/user4.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user5">
+                          <img src="../../assets/user5.jpg" alt=""/>
+                      </ion-avatar>
+                  </ion-col>
+
+              </ion-row>
+
+          </div>
+
+          <div class="event" margin-bottom>
+
+              <ion-row class="event-img add-to-fav">
+
+                  <ion-col text-center>
+                      <ion-card>
+                          <img src="../../assets/fashion-event2.jpg" alt="" width="260" height="225"/>
+                          <ion-icon name="md-heart" class="fav like"></ion-icon>
+                          <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
+                      </ion-card>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row class="star-rating" margin-horizontal>
+
+                  <ion-col col-6 text-left>
+                      <span class="trend-hash">#fashion</span>
+                  </ion-col>
+
+                  <ion-col col-6 text-right>
+                      <span class="cost">$25</span>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-12>
+                      <h3 margin-horizontal>Mahogany Bridal Fair 2018</h3>
+                      <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>&nbsp;
+                      <span class="liked-count">3.3k</span>
+                  </ion-col>
+              </ion-row>
+
+              <ion-row class="event-place" margin-horizontal>
+
+                  <ion-col col-8 text-left>
+                      <ion-icon name="md-pin"></ion-icon>&nbsp;
+                      <span class="address">The Grand Connaught Rooms...</span>
+                  </ion-col>
+
+                  <ion-col col-4 text-right>
+                      <span class="distance">2.5km</span>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row class="event-attendance" margin-horizontal>
+
+                  <ion-col col-8 text-left>
+                      <ion-icon name="md-film"></ion-icon>&nbsp;
+                      <span class="attendance">2568/10k Attending</span>
+                  </ion-col>
+
+                  <ion-col col-4 text-right class="users">
+                      <ion-avatar class="user1">
+                          <img src="../../assets/user1.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user2">
+                          <img src="../../assets/user2.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user3">
+                          <img src="../../assets/user3.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user4">
+                          <img src="../../assets/user4.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user5">
+                          <img src="../../assets/user5.jpg" alt=""/>
+                      </ion-avatar>
+                  </ion-col>
+
+              </ion-row>
+
+          </div>
+
+          <div class="event" margin-bottom>
+
+              <ion-row class="event-img add-to-fav">
+
+                  <ion-col text-center>
+                      <ion-card>
+                          <img src="../../assets/convention-event2.jpg" alt="" width="260" height="225"/>
+                          <ion-icon name="md-heart" class="fav like"></ion-icon>
+                          <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
+                      </ion-card>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row class="star-rating" margin-horizontal>
+
+                  <ion-col col-6 text-left>
+                      <span class="trend-hash">#convention</span>
+                  </ion-col>
+
+                  <ion-col col-6 text-right>
+                      <span class="cost">$15</span>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row>
+                  <ion-col col-12>
+                      <h3 margin-horizontal>AES 132nd Convention a Hit</h3>
+                      <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>
+                      <ion-icon name="md-star" color="theme1"></ion-icon>
+                      <ion-icon name="md-star-half" color="theme1"></ion-icon>
+                      <ion-icon name="md-star-outline" color="theme1"></ion-icon>&nbsp;
+                      <span class="liked-count">1.1k</span>
+                  </ion-col>
+              </ion-row>
+
+              <ion-row class="event-place" margin-horizontal>
+
+                  <ion-col col-8 text-left>
+                      <ion-icon name="md-pin"></ion-icon>&nbsp;
+                      <span class="address">Brooklyn Army Terminal, Brooklyn</span>
+                  </ion-col>
+
+                  <ion-col col-4 text-right>
+                      <span class="distance">2km</span>
+                  </ion-col>
+
+              </ion-row>
+
+              <ion-row class="event-attendance" margin-horizontal>
+
+                  <ion-col col-8 text-left>
+                      <ion-icon name="md-film"></ion-icon>&nbsp;
+                      <span class="attendance">2.6k/10k Attending</span>
+                  </ion-col>
+
+                  <ion-col col-4 text-right class="users">
+                      <ion-avatar class="user1">
+                          <img src="../../assets/user1.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user2">
+                          <img src="../../assets/user2.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user3">
+                          <img src="../../assets/user3.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user4">
+                          <img src="../../assets/user4.jpg" alt=""/>
+                      </ion-avatar>
+                      <ion-avatar class="user5">
+                          <img src="../../assets/user5.jpg" alt=""/>
+                      </ion-avatar>
+                  </ion-col>
+
+              </ion-row>
+
+          </div>
+
+      </div>
+  </div>
+
+    <div class="filter">
+        <button ion-button round color="light">
+            Filter&nbsp;<ion-icon name="md-options"></ion-icon>
+        </button>
+    </div>
+
+</ion-content>

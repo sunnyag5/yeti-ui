@@ -4,10 +4,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CityPage } from "../pages/city/city";
+import { ContactPage } from "../pages/contact/contact";
+import { EventlistPage } from "../pages/eventlist/eventlist";
 import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { SharePage } from "../pages/share/share";
-import { ContactPage } from "../pages/contact/contact";
 import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({

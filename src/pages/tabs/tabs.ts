@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+import { AboutPage } from '../about/about';
+import { CityPage } from "../city/city";
+import { ContactPage } from '../contact/contact';
+import { EventlistPage } from "../eventlist/eventlist";
 import { HomePage } from '../home/home';
 import { LoginPage } from "../login/login";
-import { CityPage } from "../city/city";
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
 import { SharePage } from "../share/share";
 
 
@@ -22,7 +23,7 @@ export class TabsPage {
         this.tab1Root = HomePage;
         this.tab2Root = LoginPage;
         this.tab3Root = CityPage;
-        this.tab4Root = AboutPage;
+        this.tab4Root = EventlistPage;
         this.tab5Root = ContactPage;
         this.tab6Root = SharePage;
     }
