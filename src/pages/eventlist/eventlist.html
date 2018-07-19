@@ -43,67 +43,6 @@
 
         </ion-row>
 
-        <!--<div class="event">
-
-            <div class="event-img">
-                <img src="../../assets/nightlife-event.jpg" alt=""/>
-                <ion-icon name="md-heart" class="fav like"></ion-icon>
-                <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
-            </div>
-
-            <ion-card class="event-info">
-                <ion-row class="star-rating" margin-horizontal margin-top>
-
-                    <ion-col col-6 text-left>
-                        <span class="trend-hash">#nightlife</span>
-                    </ion-col>
-
-                    <ion-col col-6 text-right>
-                        $20
-                    </ion-col>
-
-                </ion-row>
-
-                <ion-row>
-                    <ion-col col-12>
-                        <h1 margin-horizontal>Quiet Clubbing VIP Heated Rooftop Party</h1>
-                        <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
-                        <ion-icon name="md-star" color="theme1"></ion-icon>
-                        <ion-icon name="md-star" color="theme1"></ion-icon>
-                        <ion-icon name="md-star" color="theme1"></ion-icon>
-                        <ion-icon name="md-star-half" color="theme1"></ion-icon>&nbsp;
-                        <span class="liked-count">1.3k</span>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="event-place" margin-horizontal>
-
-                    <ion-col col-sm-10 text-left>
-                        <ion-icon name="md-pin"></ion-icon>&nbsp;
-                        <span class="address">605 W 48th Street, Manhattan</span>
-                    </ion-col>
-
-                    <ion-col col-sm-2 text-right>
-                        <span class="distance">10km</span>
-                    </ion-col>
-
-                </ion-row>
-
-                <ion-row class="event-attendance" margin-horizontal margin-bottom>
-
-                    <ion-col col-sm-10 text-left>
-                        <ion-icon name="md-film"></ion-icon>&nbsp;
-                        <span class="attendance">2.5k/10k Attending</span>
-                    </ion-col>
-
-                    <ion-col col-sm-2 text-right>
-                        <span class="attend-users">10km</span>
-                    </ion-col>
-
-                </ion-row>
-            </ion-card>
-        </div>-->
-
         <div class="event" margin-bottom>
 
             <ion-row class="event-img no-fav">
@@ -599,7 +538,7 @@
   </div>
 
     <div class="filter">
-        <button ion-button round color="light">
+        <button ion-button round color="light" (click)="filterEvent()">
             Filter&nbsp;<ion-icon name="md-options"></ion-icon>
         </button>
     </div>

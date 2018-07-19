@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { FilterPage } from "../filter/filter";
+import { EventlistPage } from "../eventlist/eventlist";
 
 /**
- * Generated class for the EventlistPage page.
+ * Generated class for the FilterPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,23 +11,20 @@ import { FilterPage } from "../filter/filter";
 
 @IonicPage()
 @Component({
-  selector: 'page-eventlist',
-  templateUrl: 'eventlist.html',
+  selector: 'page-filter',
+  templateUrl: 'filter.html',
 })
-export class EventlistPage {
-
-  plan: string;
+export class FilterPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    this.plan = "you";
-    console.log('ionViewDidLoad EventlistPage');
+    console.log('ionViewDidLoad FilterPage');
   }
 
-  filterEvent() {
-    this.navCtrl.setRoot(FilterPage);
+  goBack() {
+    this.navCtrl.setRoot(EventlistPage);
   }
 
 }

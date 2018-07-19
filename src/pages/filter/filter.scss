@@ -1,0 +1,45 @@
+page-filter {
+  ion-header {
+    border: 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+  }
+  .toolbar-background-md, .toolbar-background-ios {
+    background: linear-gradient(90deg, #ed3269, #f05f3e);
+  }
+  .toolbar-title-md {
+    letter-spacing: 1px;
+  }
+  h2 {
+    font-size: 110% !important;
+    letter-spacing: 1px;
+    span {
+      color: #ed3269 !important;
+    }
+  }
+  .filters {
+    button {
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .ratings {
+    ion-icon {
+      font-size: 40px !important;
+    }
+  }
+  .nextpage {
+    position: relative;
+    bottom: 7px;
+    z-index: 9999;
+    button {
+      font-size: 12px;
+      background: linear-gradient(90deg, #ed3269, #f05f3e);
+      letter-spacing: 2px;
+      box-shadow: 0 5px 20px rgba(136, 136, 136, 0.6);
+    }
+  }
+}

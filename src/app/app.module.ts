@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { CityPage } from "../pages/city/city";
 import { ContactPage } from '../pages/contact/contact';
 import { EventlistPage } from "../pages/eventlist/eventlist";
+import { FilterPage } from "../pages/filter/filter";
 import { HashtagPage } from "../pages/hashtag/hashtag";
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from "../pages/login/login";
@@ -24,6 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CityPage,
     ContactPage,
     EventlistPage,
+    FilterPage,
     HashtagPage,
     HomePage,
     LoginPage,
@@ -42,6 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CityPage,
     ContactPage,
     EventlistPage,
+    FilterPage,
     HashtagPage,
     HomePage,
     LoginPage,

@@ -134,6 +134,26 @@ $segment-button-md-opacity: 0.5;
 $segment-button-md-opacity-activated: 1;
 $segment-button-md-font-size: 1.4rem;
 
+// Range Sass Variables
+
+$range-md-padding-horizontal: 20px;
+$range-md-bar-height: 5px;
+$range-md-bar-active-background-color: #ed3269;
+$range-md-knob-width: 40px;
+$range-md-knob-height: 40px;
+$range-md-knob-min-border: 2px solid #b3b3b3;
+
+// Checkbox Sass Variables
+
+$checkbox-md-icon-background-color-on: #ed3269;
+$checkbox-md-border-bottom-color: #ed3269;
+$checkbox-md-icon-size: 23px;
+$checkbox-md-icon-border-radius: 4px;
+$checkbox-md-icon-border-color-on: #ed3269;
+$checkbox-md-transition-duration: 500ms;
+$checkbox-md-item-start-margin-start: 0;
+$checkbox-md-item-start-margin-end: 10px;
+
 
 // Ionicons
 // --------------------------------------------------
