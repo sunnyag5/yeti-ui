@@ -1,0 +1,199 @@
+page-event {
+  .slides {
+    height: 250px;
+    ion-icon {
+      color: #ffffff !important;
+      font-size: 30px;
+      position: absolute;
+      top: 15px;
+      z-index: 9999;
+    }
+    .back-arrow-icon {
+      left: 20px;
+    }
+    .share-icon {
+      right: 70px;
+    }
+    .heart-icon {
+      right: 20px;
+    }
+  }
+  .slider {
+    height: 250px;
+    color: #ffffff;
+    padding: 0 25px 0 25px !important;
+  }
+
+  .swiper-pagination-bullet {
+    background: #ffffff !important;
+    opacity: 0.5;
+  }
+  .swiper-pagination-bullet-active {
+    background: #ffffff;
+    opacity: 1;
+  }
+  #slider1 {
+    background: transparent url("../../assets/nightlife-event.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #slider2 {
+    background: transparent url("../../assets/nightlife-event1.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #slider3 {
+    background: transparent url("../../assets/nightlife-event2.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #slider4 {
+    background: transparent url("../../assets/nightlife-event3.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  a {
+    color: #ed3269;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .trend-hash, .event-time, .event-attendance {
+    color: #737373 !important;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .user {
+    ion-avatar {
+      display: inline-block;
+      img {
+        width: 40px;
+      }
+    }
+  }
+  .reviews {
+    h1 {
+      font-size: 220% !important;
+      color: #ed3269 !important;
+      font-weight: bold;
+    }
+    ion-icon, .liked-count, .reviews-count {
+      font-size: 13px !important;
+    }
+  }
+  .write-review {
+    color: #ed3269 !important;
+    letter-spacing: 1px;
+  }
+  .about-event, .endorsed, .location, .contact, .similar-event {
+    font-size: 12px;
+    letter-spacing: 1px;
+    h2 {
+      color: #737373 !important;
+      font-size: 130% !important;
+    }
+  }
+  .endorsed {
+    ion-icon {
+      color: #ed3269;
+    }
+  }
+  .event {
+    display: inline-block;
+  }
+  .event-img {
+    position: relative;
+    .fav {
+      font-size: 30px;
+      position: absolute;
+      top: 15%;
+      right: 10%;
+    }
+    ion-list {
+      border-radius: 0 0 5px 5px;
+      letter-spacing: 1px;
+      ion-item {
+        font-size: 14px !important;
+      }
+    }
+  }
+  .no-fav {
+    .unlike {
+      color: #ffffff !important;
+      display: block;
+    }
+    .like {
+      display: none;
+    }
+  }
+  .add-to-fav {
+    .unlike {
+      display: none;
+    }
+    .like {
+      color: #ed3269 !important;
+      display: block;
+    }
+  }
+  .star-rating, .event-place, .event-attendance {
+    color: #737373 !important;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .star-rating {
+    .cost {
+      color: #ed3269 !important;
+      font-weight: bold !important;
+    }
+  }
+  .users {
+    position: relative;
+    ion-avatar {
+      position: absolute;
+      img {
+        width: 20px;
+        border: 2px solid #ffffff;
+      }
+    }
+    .user1 {
+      right: 44px;
+      z-index: 5;
+    }
+    .user2 {
+      right: 33px;
+      z-index: 4;
+    }
+    .user3 {
+      right: 22px;
+      z-index: 3;
+    }
+    .user4 {
+      right: 11px;
+      z-index: 2;
+    }
+    .user5 {
+      right: 0;
+      z-index: 1;
+    }
+  }
+  .nextpage {
+    position: relative;
+    bottom: 7px;
+    z-index: 9999;
+    button {
+      font-size: 12px;
+      background: linear-gradient(90deg, #ed3269, #f05f3e);
+      letter-spacing: 2px;
+      box-shadow: 0 5px 20px rgba(136, 136, 136, 0.6);
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .reviews {
+      h1 {
+        font-size: 180% !important;
+      }
+      ion-icon, .liked-count, .reviews-count {
+        font-size: 12px !important;
+      }
+    }
+  }
+}

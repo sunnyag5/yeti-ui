@@ -36,8 +36,8 @@
     <button ion-button round small color="light">All Dates</button>
     <button ion-button round small color="theme1">Today</button>
     <button ion-button round small color="light">Tomorrow</button>
-    <button ion-button round small color="theme1">This Week</button>
-    <button ion-button round small color="light">This Month</button>
+    <button ion-button round small color="light">This Week</button>
+    <button ion-button round small color="theme1">This Month</button>
     <button ion-button round small color="light">This Year</button>
     <button ion-button round small color="theme1">Sunday</button>
     <button ion-button round small color="light">Monday</button>
@@ -57,16 +57,16 @@
 
   <ion-scroll scrollX="true" class="filters" style="white-space: nowrap;height: 60px;" padding-left>
     <button ion-button round small color="light">All Hashtag</button>
+    <button ion-button round small color="theme1">#nightlife</button>
     <button ion-button round small color="theme1">#music</button>
     <button ion-button round small color="light">#festival</button>
     <button ion-button round small color="theme1">#fashion</button>
     <button ion-button round small color="light">#movie</button>
     <button ion-button round small color="light">#culture</button>
-    <button ion-button round small color="theme1">#convention</button>
-    <button ion-button round small color="light">#nightlife</button>
-    <button ion-button round small color="theme1">#birthday</button>
+    <button ion-button round small color="light">#convention</button>
+    <button ion-button round small color="light">#birthday</button>
     <button ion-button round small color="light">#food</button>
-    <button ion-button round small color="theme1">#wedding</button>
+    <button ion-button round small color="light">#wedding</button>
   </ion-scroll>
 
   <ion-list no-lines margin-top>
@@ -106,7 +106,7 @@
     </ion-item>
 
     <ion-item>
-      <ion-range color="theme1" [dualKnobs]="true" [min]="21" [max]="72" [step]="3" [snaps]="true"></ion-range>
+      <ion-range color="theme1" dualKnobs="true" [min]="21" [max]="72" [step]="3" [snaps]="true"></ion-range>
     </ion-item>
 
   </ion-list>
@@ -121,7 +121,7 @@
   </ion-list>
 
   <div class="nextpage" text-center>
-    <button ion-button round (click)="setHashTag()">Show 100+ Events</button>
+    <button ion-button round (click)="getEventInfo()">Show 100+ Events</button>
   </div>
 
 </ion-content>

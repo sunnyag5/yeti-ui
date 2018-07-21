@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { CityPage } from "../pages/city/city";
 import { ContactPage } from '../pages/contact/contact';
+import { EventPage } from "../pages/event/event";
 import { EventlistPage } from "../pages/eventlist/eventlist";
 import { FilterPage } from "../pages/filter/filter";
 import { HashtagPage } from "../pages/hashtag/hashtag";
@@ -24,6 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     CityPage,
     ContactPage,
+    EventPage,
     EventlistPage,
     FilterPage,
     HashtagPage,
@@ -43,6 +45,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     CityPage,
     ContactPage,
+    EventPage,
     EventlistPage,
     FilterPage,
     HashtagPage,
