@@ -4,7 +4,7 @@ page-share {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
   }
   .toolbar-background-md, .toolbar-background-ios {
-    background: linear-gradient(90deg, #ed3269, #f05f3e);
+    background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
   }
   .toolbar-title-md {
     letter-spacing: 1px;
