@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { EventPage } from "../event/event";
 import { EventlistPage } from "../eventlist/eventlist";
 
 /**
@@ -26,10 +25,6 @@ export class FilterPage {
 
   goBack() {
     this.navCtrl.setRoot(EventlistPage);
-  }
-
-  getEventInfo() {
-    this.navCtrl.setRoot(EventPage);
   }
 
 }

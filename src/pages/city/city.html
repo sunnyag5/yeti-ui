@@ -13,7 +13,7 @@
     </ion-title>
     <ion-searchbar *ngIf="isSearchbarOpened" [cancelButtonText]="'Close'" [showCancelButton]="true" placeholder="Search City..." (ionCancel)="isSearchbarOpened=false" [animated]="true"></ion-searchbar>
     <ion-buttons end>
-      <button ion-button icon-only *ngIf="!isSearchbarOpened" (click)="isSearchbarOpened=true">
+      <button ion-button icon-only class="search-button-icon" *ngIf="!isSearchbarOpened" (click)="isSearchbarOpened=true">
         <ion-icon name="search"></ion-icon>
       </button>
     </ion-buttons>
@@ -66,14 +66,14 @@
 
   <ion-row padding-horizontal>
 
-    <ion-col text-center class="city-pic" margin-top>
+    <ion-col text-center class="city-pic active" margin-top>
       <img src="../../assets/sydney.jpg" alt=""/>
       <p>Sydney</p>
       <span>Australia</span>
       <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
     </ion-col>
 
-    <ion-col text-center class="city-pic active" margin-top>
+    <ion-col text-center class="city-pic" margin-top>
       <img src="../../assets/tokyo.jpg" alt=""/>
       <p>Tokyo</p>
       <span>Japan</span>

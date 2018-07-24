@@ -49,7 +49,7 @@
 
                 <ion-col text-center>
                     <ion-card>
-                        <img src="../../assets/nightlife-event.jpg" alt="" width="260" height="225"/>
+                        <img src="../../assets/nightlife-event.jpg" alt="" width="260" height="225" (click)="getEventInfo()"/>
                         <ion-icon name="md-heart" class="fav like"></ion-icon>
                         <ion-icon name="md-heart-outline" class="fav unlike"></ion-icon>
                     </ion-card>
@@ -57,7 +57,7 @@
 
             </ion-row>
 
-            <ion-row class="star-rating" margin-horizontal>
+            <ion-row class="hashtag-cost" margin-horizontal>
 
                 <ion-col col-6 text-left>
                     <span class="trend-hash">#nightlife</span>
@@ -69,9 +69,9 @@
 
             </ion-row>
 
-            <ion-row>
+            <ion-row class="event-name">
                 <ion-col col-12>
-                    <h3 margin-horizontal>Quiet Clubbing VIP Heated Rooftop Party</h3>
+                    <h3 margin-horizontal (click)="getEventInfo()">Quiet Clubbing VIP Heated Rooftop Party</h3>
                     <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
                     <ion-icon name="md-star" color="theme1"></ion-icon>
                     <ion-icon name="md-star" color="theme1"></ion-icon>
@@ -143,7 +143,7 @@
 
             </ion-row>
 
-            <ion-row class="star-rating" margin-horizontal>
+            <ion-row class="hashtag-cost" margin-horizontal>
 
                 <ion-col col-6 text-left>
                     <span class="trend-hash">#fashion</span>
@@ -155,7 +155,7 @@
 
             </ion-row>
 
-            <ion-row>
+            <ion-row class="event-name">
                 <ion-col col-12>
                     <h3 margin-horizontal>&quot;Bottled Art&quot; Wine Painting Nigh</h3>
                     <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
@@ -223,7 +223,7 @@
 
             </ion-row>
 
-            <ion-row class="star-rating" margin-horizontal>
+            <ion-row class="hashtag-cost" margin-horizontal>
 
                 <ion-col col-6 text-left>
                     <span class="trend-hash">#convention</span>
@@ -235,7 +235,7 @@
 
             </ion-row>
 
-            <ion-row>
+            <ion-row class="event-name">
                 <ion-col col-12>
                     <h3 margin-horizontal>APEC Business Advisory Council</h3>
                     <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
@@ -308,7 +308,7 @@
 
               </ion-row>
 
-              <ion-row class="star-rating" margin-horizontal>
+              <ion-row class="hashtag-cost" margin-horizontal>
 
                   <ion-col col-6 text-left>
                       <span class="trend-hash">#culture</span>
@@ -320,7 +320,7 @@
 
               </ion-row>
 
-              <ion-row>
+              <ion-row class="event-name">
                   <ion-col col-12>
                       <h3 margin-horizontal>Sculpture Without Sight Experience</h3>
                       <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
@@ -388,7 +388,7 @@
 
               </ion-row>
 
-              <ion-row class="star-rating" margin-horizontal>
+              <ion-row class="hashtag-cost" margin-horizontal>
 
                   <ion-col col-6 text-left>
                       <span class="trend-hash">#fashion</span>
@@ -400,7 +400,7 @@
 
               </ion-row>
 
-              <ion-row>
+              <ion-row class="event-name">
                   <ion-col col-12>
                       <h3 margin-horizontal>Mahogany Bridal Fair 2018</h3>
                       <ion-icon name="md-star" color="theme1" margin-left></ion-icon>
@@ -468,7 +468,7 @@
 
               </ion-row>
 
-              <ion-row class="star-rating" margin-horizontal>
+              <ion-row class="hashtag-cost" margin-horizontal>
 
                   <ion-col col-6 text-left>
                       <span class="trend-hash">#convention</span>
@@ -480,7 +480,7 @@
 
               </ion-row>
 
-              <ion-row>
+              <ion-row class="event-name">
                   <ion-col col-12>
                       <h3 margin-horizontal>AES 132nd Convention a Hit</h3>
                       <ion-icon name="md-star" color="theme1" margin-left></ion-icon>

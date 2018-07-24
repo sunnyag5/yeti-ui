@@ -4,22 +4,25 @@ page-filter {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
   }
   .toolbar-background-md, .toolbar-background-ios {
-    background: linear-gradient(90deg, #ed3269, #f05f3e);
+    background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
   }
   .toolbar-title-md {
     letter-spacing: 1px;
   }
   h2 {
     font-size: 110% !important;
+    font-weight: bold !important;
     letter-spacing: 1px;
     span {
-      color: #ed3269 !important;
+      color: color($colors, theme1) !important;
     }
   }
   .filters {
+    white-space: nowrap;
+    height: 60px !important;
     button {
-      font-weight: bold;
-      letter-spacing: 1px;
+      font-weight: normal !important;
+      letter-spacing: 2px;
       text-transform: capitalize;
       box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
       padding-top: 20px;
@@ -37,9 +40,36 @@ page-filter {
     z-index: 9999;
     button {
       font-size: 12px;
-      background: linear-gradient(90deg, #ed3269, #f05f3e);
+      background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
       letter-spacing: 2px;
       box-shadow: 0 5px 20px rgba(136, 136, 136, 0.6);
+    }
+  }
+
+  @media only screen and (min-width: 760px) {
+    .toolbar-title-md {
+      font-size: 2.5rem !important;
+    }
+    h2 {
+      font-size: 160% !important;
+    }
+    .filters {
+      height: 80px !important;
+      button {
+        font-size: 25px !important;
+      }
+    }
+    .ratings {
+      ion-icon {
+        font-size: 60px !important;
+      }
+    }
+    .nextpage {
+      button {
+        font-size: 22px !important;
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+      }
     }
   }
 }

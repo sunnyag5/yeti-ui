@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { FilterPage } from "../filter/filter";
+import { EventlistPage } from "../eventlist/eventlist";
 import { SharePage } from "../share/share";
 
 /**
@@ -25,7 +25,7 @@ export class EventPage {
   }
 
   goBack() {
-    this.navCtrl.setRoot(FilterPage);
+    this.navCtrl.setRoot(EventlistPage);
   }
 
   shareEvent() {

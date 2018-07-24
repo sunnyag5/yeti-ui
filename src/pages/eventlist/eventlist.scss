@@ -4,13 +4,13 @@ page-eventlist {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
   }
   .toolbar-background-md, .toolbar-background-ios {
-    background: linear-gradient(90deg, #ed3269, #f05f3e);
+    background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
   }
   .toolbar-title-md {
     letter-spacing: 1px;
   }
   .location p {
-    color: #ed3269 !important;
+    color: color($colors, theme1) !important;
     letter-spacing: 1px;
   }
   .event-img {
@@ -31,7 +31,7 @@ page-eventlist {
   }
   .no-fav {
     .unlike {
-      color: #ffffff !important;
+      color: color($colors, lightest) !important;
       display: block;
     }
     .like {
@@ -43,18 +43,18 @@ page-eventlist {
       display: none;
     }
     .like {
-      color: #ed3269 !important;
+      color: color($colors, theme1) !important;
       display: block;
     }
   }
-  .star-rating, .event-place, .event-attendance {
-    color: #737373 !important;
+  .hashtag-cost, .event-place, .event-attendance {
+    color: color($colors, darker) !important;
     font-size: 15px;
     letter-spacing: 1px;
   }
-  .star-rating {
+  .hashtag-cost {
     .cost {
-      color: #ed3269 !important;
+      color: color($colors, theme1) !important;
       font-weight: bold !important;
     }
   }
@@ -64,7 +64,7 @@ page-eventlist {
       position: absolute;
       img {
         width: 20px;
-        border: 2px solid #ffffff;
+        border: 2px solid color($colors, lightest);
       }
     }
     .user1 {
@@ -101,6 +101,63 @@ page-eventlist {
       text-transform: capitalize;
       box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
       padding: 0 20px 0 20px;
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .toolbar-title-md {
+      font-size: 2.5rem !important;
+    }
+    .location p {
+      font-size: 22px !important;
+    }
+    .event-img {
+      img {
+        height: 450px !important;
+      }
+      .fav {
+        font-size: 50px !important;
+        top: 13% !important;
+        right: 8% !important;
+      }
+      ion-list {
+        ion-item {
+          font-size: 22px !important;
+        }
+      }
+    }
+    .hashtag-cost, .event-place, .event-attendance {
+      font-size: 23px !important;
+    }
+    .event-name {
+      h3 {
+        font-size: 230% !important;
+      }
+      ion-icon, span {
+        font-size: 23px !important;
+      }
+    }
+    .users {
+      img {
+        width: 30px !important;
+      }
+      .user1 {
+        right: 68px !important;
+      }
+      .user2 {
+        right: 51px !important;
+      }
+      .user3 {
+        right: 34px !important;
+      }
+      .user4 {
+        right: 17px !important;
+      }
+    }
+    .filter {
+      button {
+        font-size: 22px !important;
+        padding: 30px 35px 30px 35px !important;
+      }
     }
   }
 }

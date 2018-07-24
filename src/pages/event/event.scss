@@ -2,7 +2,7 @@ page-event {
   .slides {
     height: 250px;
     ion-icon {
-      color: #ffffff !important;
+      color: color($colors, lightest) !important;
       font-size: 30px;
       position: absolute;
       top: 15px;
@@ -18,18 +18,12 @@ page-event {
       right: 20px;
     }
   }
-  .slider {
-    height: 250px;
-    color: #ffffff;
-    padding: 0 25px 0 25px !important;
-  }
-
   .swiper-pagination-bullet {
-    background: #ffffff !important;
+    background: color($colors, lightest) !important;
     opacity: 0.5;
   }
   .swiper-pagination-bullet-active {
-    background: #ffffff;
+    background: color($colors, lightest);
     opacity: 1;
   }
   #slider1 {
@@ -53,12 +47,12 @@ page-event {
     background-size: cover;
   }
   a {
-    color: #ed3269;
+    color: color($colors, theme1);
     font-weight: bold;
     text-decoration: none;
   }
   .trend-hash, .event-time, .event-attendance {
-    color: #737373 !important;
+    color: color($colors, darker) !important;
     font-size: 15px;
     letter-spacing: 1px;
   }
@@ -73,7 +67,7 @@ page-event {
   .reviews {
     h1 {
       font-size: 220% !important;
-      color: #ed3269 !important;
+      color: color($colors, theme1) !important;
       font-weight: bold;
     }
     ion-icon, .liked-count, .reviews-count {
@@ -81,20 +75,20 @@ page-event {
     }
   }
   .write-review {
-    color: #ed3269 !important;
+    color: color($colors, theme1) !important;
     letter-spacing: 1px;
   }
   .about-event, .endorsed, .location, .contact, .similar-event {
     font-size: 12px;
     letter-spacing: 1px;
     h2 {
-      color: #737373 !important;
+      color: color($colors, darker) !important;
       font-size: 130% !important;
     }
   }
   .endorsed {
     ion-icon {
-      color: #ed3269;
+      color: color($colors, theme1);
     }
   }
   .event {
@@ -118,7 +112,7 @@ page-event {
   }
   .no-fav {
     .unlike {
-      color: #ffffff !important;
+      color: color($colors, lightest) !important;
       display: block;
     }
     .like {
@@ -130,20 +124,14 @@ page-event {
       display: none;
     }
     .like {
-      color: #ed3269 !important;
+      color: color($colors, theme1) !important;
       display: block;
     }
   }
   .star-rating, .event-place, .event-attendance {
-    color: #737373 !important;
+    color: color($colors, darker) !important;
     font-size: 15px;
     letter-spacing: 1px;
-  }
-  .star-rating {
-    .cost {
-      color: #ed3269 !important;
-      font-weight: bold !important;
-    }
   }
   .users {
     position: relative;
@@ -151,7 +139,7 @@ page-event {
       position: absolute;
       img {
         width: 20px;
-        border: 2px solid #ffffff;
+        border: 2px solid color($colors, lightest);
       }
     }
     .user1 {
@@ -181,7 +169,7 @@ page-event {
     z-index: 9999;
     button {
       font-size: 12px;
-      background: linear-gradient(90deg, #ed3269, #f05f3e);
+      background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
       letter-spacing: 2px;
       box-shadow: 0 5px 20px rgba(136, 136, 136, 0.6);
     }
@@ -193,6 +181,68 @@ page-event {
       }
       ion-icon, .liked-count, .reviews-count {
         font-size: 12px !important;
+      }
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .slides {
+      height: 450px !important;
+      ion-icon {
+        font-size: 50px !important;
+      }
+      .back-arrow-icon {
+        left: 30px;
+      }
+      .share-icon {
+        right: 110px;
+      }
+      .heart-icon {
+        right: 30px;
+      }
+    }
+    .event-name h3 {
+      font-size: 400% !important;
+    }
+    .trend-hash, .event-time, .event-attendance {
+      font-size: 23px;
+    }
+    .reviews {
+      h1 {
+        font-size: 350% !important;
+      }
+      ion-icon, .liked-count, .reviews-count {
+        font-size: 23px !important;
+      }
+    }
+    .write-review {
+      font-size: 27px !important;
+    }
+    .about-event, .endorsed, .location, .contact, .similar-event {
+      h2 {
+        font-size: 270% !important;
+      }
+      ion-item {
+        font-size: 23px !important;
+      }
+    }
+    .endorsed {
+      ion-icon {
+        font-size: 40px !important;
+      }
+    }
+    .map {
+      width: 100%;
+    }
+    .similar-event {
+      .event-attendance {
+        font-size: 15px !important;
+      }
+    }
+    .nextpage {
+      button {
+        font-size: 22px !important;
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
       }
     }
   }

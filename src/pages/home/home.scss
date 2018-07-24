@@ -14,34 +14,34 @@ page-home {
   .logo-with-name h2 {
     font-family: 'Noto Serif', 'sans-serif';
     display: inline;
-    color: #ed3269;
+    color: color($colors, theme1);
     font-size: 400%;
     letter-spacing: 15px;
     margin: 0 10px 0 0;
   }
   .logo-with-name span {
-    color: #ffffff;
-    background: linear-gradient(90deg, #f05f3e, #ed3269);
+    color: color($colors, lightest);
+    background: linear-gradient(90deg, color($colors, theme2), color($colors, theme1));
     padding: 2px 12px 2px 12px;
     border-radius: 20px;
   }
   .logo-with-name p {
-    color: #000000 !important;
+    color: color($colors, dark) !important;
     font-size: 15px;
     letter-spacing: 2px;
     font-weight: bold;
   }
   .swiper-pagination-bullet {
-    background: #ed3269 !important;
+    background: color($colors, theme1) !important;
     opacity: 0.5;
   }
 
   .swiper-pagination-bullet-active {
-    background: #ed3269;
+    background: color($colors, theme1);
     opacity: 1;
   }
   .slider {
-    color: #ffffff;
+    color: color($colors, lightest);
     padding: 0 25px 0 25px !important;
   }
   .slider .top {

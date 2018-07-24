@@ -4,13 +4,13 @@ page-hashtag {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
   }
   .toolbar-background-md, .toolbar-background-ios {
-    background: linear-gradient(90deg, #ed3269, #f05f3e);
+    background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
   }
   .toolbar-title-md {
     letter-spacing: 1px;
   }
   .back-button-icon-md {
-    color: #ffffff !important;
+    color: color($colors, lightest) !important;
   }
   .city-pic {
     position: relative;
@@ -29,7 +29,7 @@ page-hashtag {
     letter-spacing: 1px;
   }
   .city-pic span {
-    color: #8c8c8c;
+    color: color($colors, mediumdark);
     font-size: 14px;
     text-align: left;
     text-indent: 10px;
@@ -47,14 +47,14 @@ page-hashtag {
   .active .checkmark {
     display: block;
     font-size: 40px;
-    color: #ed3269;
+    color: color($colors, theme1);
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .active p {
-    color: #ed3269;
+    color: color($colors, theme1);
   }
   .start {
     position: fixed;
@@ -66,7 +66,7 @@ page-hashtag {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     button {
-      background: linear-gradient(90deg, #ed3269, #f05f3e);
+      background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
       letter-spacing: 3px;
       box-shadow: 0 5px 30px rgba(136, 136, 136, 0.6);
       padding: 25px 140px 25px 140px;
@@ -128,6 +128,12 @@ page-hashtag {
   }
 
   @media only screen and (min-width: 760px) {
+    .toolbar-title-md {
+      font-size: 2.5rem !important;
+    }
+    .back-button-icon-md {
+      font-size: 2.5rem !important;
+    }
     .city-pic img {
       width: 340px !important;
       height: 503px !important;

@@ -4,7 +4,7 @@ page-city {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
   }
   .toolbar-background-md, .toolbar-background-ios {
-    background: linear-gradient(90deg, #ed3269, #f05f3e);
+    background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
   }
   .toolbar-title-md {
     letter-spacing: 1px;
@@ -28,7 +28,7 @@ page-city {
     letter-spacing: 2px;
   }
   .pics ion-row:first-child {
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
   }
   .city-pic {
     position: relative;
@@ -47,7 +47,7 @@ page-city {
     letter-spacing: 1px;
   }
   .city-pic span {
-    color: #8c8c8c;
+    color: color($colors, mediumdark);
     font-size: 14px;
     text-align: left;
     text-indent: 10px;
@@ -65,14 +65,14 @@ page-city {
   .active .checkmark {
     display: block;
     font-size: 40px;
-    color: #ed3269;
+    color: color($colors, theme1);
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .active p {
-    color: #ed3269;
+    color: color($colors, theme1);
   }
   .nextpage {
     position: fixed;
@@ -81,7 +81,7 @@ page-city {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     button {
-      background: linear-gradient(90deg, #ed3269, #f05f3e);
+      background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
       letter-spacing: 3px;
       box-shadow: 0 5px 30px rgba(136, 136, 136, 0.6);
       padding: 25px 140px 25px 140px;
@@ -140,6 +140,14 @@ page-city {
   }
 
   @media only screen and (min-width: 760px) {
+    .toolbar-title-md {
+      font-size: 2.5rem !important;
+    }
+    ion-navbar {
+      .search-button-icon {
+        font-size: 2rem !important;
+      }
+    }
     .city-pic img {
       width: 340px !important;
       height: 503px !important;

@@ -21,16 +21,39 @@ page-share {
       font-size: 3em;
       line-height: 1;
     }
-    .social-icon {
-      font-size: 2.5em;
-      line-height: 1;
-    }
     h1 {
       font-size: 180%;
     }
     p {
       font-size: 16px;
       letter-spacing: 1px;
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .toolbar-title-md {
+      font-size: 2.5rem !important;
+    }
+    h1 {
+      font-size: 300% !important;
+    }
+    p {
+      font-size: 22px !important;
+    }
+    .share-icon {
+      font-size: 5em !important;
+    }
+    .card-style {
+      .person-icon {
+        font-size: 4em !important;
+      }
+      .social-icon {
+        margin-left: 50% !important;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
     }
   }
 }

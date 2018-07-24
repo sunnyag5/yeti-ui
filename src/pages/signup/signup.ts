@@ -24,8 +24,8 @@ export class SignupPage {
     console.log('ionViewDidLoad SignupPage');
   }
 
-  /*login() {
-    this.navCtrl.parent.select(LoginPage);
-  }*/
+  goToLogin() {
+    this.navCtrl.setRoot(LoginPage);
+  }
 
 }
