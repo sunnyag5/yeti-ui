@@ -12,15 +12,16 @@ page-hashtag {
   .back-button-icon-md {
     color: color($colors, lightest) !important;
   }
-  .city-pic {
+  .hash-event-pic {
     position: relative;
   }
-  .city-pic img {
+  .hash-event-pic img {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
   }
-  .city-pic p {
+  .hash-event-pic p {
+    color: color($colors, dark);
     font-size: 15px;
     text-align: left;
     text-indent: 10px;
@@ -28,15 +29,15 @@ page-hashtag {
     margin-bottom: 4px;
     letter-spacing: 1px;
   }
-  .city-pic span {
-    color: color($colors, mediumdark);
+  .hash-event-pic span {
+    color: color($colors, darker);
     font-size: 14px;
     text-align: left;
     text-indent: 10px;
     display: block;
     letter-spacing: 1px;
   }
-  .city-pic .checkmark {
+  .hash-event-pic .checkmark {
     display: none;
   }
   .active img {
@@ -73,14 +74,14 @@ page-hashtag {
     }
   }
   @media only screen and (max-width: 320px) {
-    .city-pic img {
+    .hash-event-pic img {
       width: 150px !important;
       height: 222px !important;
     }
-    .city-pic p {
+    .hash-event-pic p {
       text-indent: 0 !important;
     }
-    .city-pic span {
+    .hash-event-pic span {
       text-indent: 0 !important;
     }
     .start button {
@@ -91,14 +92,14 @@ page-hashtag {
   @media only screen and (max-width: 360px) {}
 
   @media only screen and (max-width: 375px) {
-    .city-pic img {
+    .hash-event-pic img {
       width: 160px !important;
       height: 237px !important;
     }
-    .city-pic p {
+    .hash-event-pic p {
       text-indent: 6px !important;
     }
-    .city-pic span {
+    .hash-event-pic span {
       text-indent: 6px !important;
     }
     .active .checkmark {
@@ -112,14 +113,14 @@ page-hashtag {
   @media only screen and (max-width: 411px) {}
 
   @media only screen and (max-width: 414px) {
-    .city-pic img {
+    .hash-event-pic img {
       width: 180px;
       height: 266px;
     }
-    .city-pic p {
+    .hash-event-pic p {
       text-indent: 10px;
     }
-    .city-pic span {
+    .hash-event-pic span {
       text-indent: 10px;
     }
     .start button {
@@ -134,15 +135,15 @@ page-hashtag {
     .back-button-icon-md {
       font-size: 2.5rem !important;
     }
-    .city-pic img {
+    .hash-event-pic img {
       width: 340px !important;
       height: 503px !important;
     }
-    .city-pic p {
+    .hash-event-pic p {
       font-size: 25px;
       text-indent: 15px !important;
     }
-    .city-pic span {
+    .hash-event-pic span {
       font-size: 24px;
       text-indent: 15px !important;
     }

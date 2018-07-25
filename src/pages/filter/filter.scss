@@ -13,18 +13,14 @@ page-filter {
     font-size: 110% !important;
     font-weight: bold !important;
     letter-spacing: 1px;
-    span {
-      color: color($colors, theme1) !important;
-    }
   }
   .filters {
     white-space: nowrap;
     height: 60px !important;
     button {
       font-weight: normal !important;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       text-transform: capitalize;
-      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
       padding-top: 20px;
       padding-bottom: 20px;
     }
