@@ -1,0 +1,56 @@
+page-attending {
+  ion-header {
+    border: 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+  }
+  .toolbar-background-md, .toolbar-background-ios {
+    background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
+  }
+  .toolbar-title-md {
+    letter-spacing: 1px;
+  }
+  ion-avatar {
+    width: 60px !important;
+    height: 60px !important;
+    img {
+      width: 60px !important;
+      height: 60px !important;
+    }
+  }
+  h2 {
+    font-size: 120% !important;
+    font-weight: bold !important;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  span {
+    font-size: 90%;
+    letter-spacing: 1px;
+  }
+  ion-icon {
+    font-size: 130% !important;
+  }
+  @media only screen and (min-width: 760px) {
+    .toolbar-title-md {
+      font-size: 2.5rem !important;
+    }
+    ion-avatar {
+      width: 100px !important;
+      height: 100px !important;
+      img {
+        width: 100px !important;
+        height: 100px !important;
+      }
+    }
+    h2 {
+      font-size: 220% !important;
+      line-height: 50px !important;
+    }
+    span {
+      font-size: 140% !important;
+    }
+    ion-icon {
+      font-size: 160%;
+    }
+  }
+}
