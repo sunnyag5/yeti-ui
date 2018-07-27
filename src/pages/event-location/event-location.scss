@@ -1,0 +1,145 @@
+page-event-location {
+  .map {
+    position: relative !important;
+    img {
+      width: 100%;
+    }
+    .close {
+      position: absolute;
+      bottom: 25px;
+      left: 10px;
+      z-index: 9999;
+      button {
+        font-size: 15px !important;
+        border-radius: 50% !important;
+        padding: 12px;
+      }
+    }
+    .filter {
+      position: absolute;
+      bottom: 5px !important;
+      left: 50% !important;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      button {
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+        padding: 0 20px 0 20px;
+      }
+    }
+    .navigate {
+      position: absolute;
+      bottom: 25px;
+      right: 10px;
+      z-index: 9999;
+      button {
+        border-radius: 50%;
+        padding: 12px;
+        ion-icon {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  .event {
+    display: inline-block;
+  }
+  .event-img {
+    position: relative;
+    .fav {
+      font-size: 30px;
+      position: absolute;
+      top: 15%;
+      right: 10%;
+    }
+    ion-list {
+      border-radius: 0 0 5px 5px;
+      letter-spacing: 1px;
+      ion-item {
+        font-size: 14px !important;
+      }
+    }
+  }
+  .no-fav {
+    .unlike {
+      color: color($colors, lightest) !important;
+      display: block;
+    }
+    .like {
+      display: none;
+    }
+  }
+  .add-to-fav {
+    .unlike {
+      display: none;
+    }
+    .like {
+      color: color($colors, theme1) !important;
+      display: block;
+    }
+  }
+  .star-rating, .event-place, .event-attendance {
+    color: color($colors, darker) !important;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .users {
+    position: relative;
+    ion-avatar {
+      position: absolute;
+      img {
+        width: 20px;
+        border: 2px solid color($colors, lightest);
+      }
+    }
+    .user1 {
+      right: 44px;
+      z-index: 5;
+    }
+    .user2 {
+      right: 33px;
+      z-index: 4;
+    }
+    .user3 {
+      right: 22px;
+      z-index: 3;
+    }
+    .user4 {
+      right: 11px;
+      z-index: 2;
+    }
+    .user5 {
+      right: 0;
+      z-index: 1;
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .similar-event {
+      ion-item {
+        font-size: 23px !important;
+      }
+    }
+    .close, .navigate {
+      bottom: 45px !important;
+    }
+    .close {
+      left: 35px !important;
+    }
+    .navigate {
+      right: 35px !important;
+    }
+    .filter {
+      button {
+        font-size: 22px !important;
+        padding: 30px 35px 30px 35px !important;
+      }
+    }
+  }
+}

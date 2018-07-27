@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { EventLocationPage } from "../event-location/event-location";
 import { HashtagPage } from "../hashtag/hashtag";
 
 /**
@@ -29,5 +30,9 @@ export class CityPage {
   setHashTag() {
     this.navCtrl.push(HashtagPage);
   }
+
+    getLocationMap() {
+      this.navCtrl.setRoot(EventLocationPage);
+    }
 
 }

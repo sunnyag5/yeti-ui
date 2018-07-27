@@ -8,6 +8,7 @@ import { AttendingPage } from "../pages/attending/attending";
 import { CityPage } from "../pages/city/city";
 import { ContactPage } from '../pages/contact/contact';
 import { EventPage } from "../pages/event/event";
+import { EventLocationPage } from "../pages/event-location/event-location";
 import { EventlistPage } from "../pages/eventlist/eventlist";
 import { FilterPage } from "../pages/filter/filter";
 import { HashtagPage } from "../pages/hashtag/hashtag";
@@ -28,6 +29,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CityPage,
     ContactPage,
     EventPage,
+    EventLocationPage,
     EventlistPage,
     FilterPage,
     HashtagPage,
@@ -49,6 +51,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CityPage,
     ContactPage,
     EventPage,
+    EventLocationPage,
     EventlistPage,
     FilterPage,
     HashtagPage,

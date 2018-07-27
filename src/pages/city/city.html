@@ -30,14 +30,14 @@
 
   <ion-row padding-horizontal margin-top>
 
-    <ion-col text-center class="city-pic" margin-top>
-      <img src="../../assets/new_york.jpg" alt=""/>
+    <ion-col text-center class="city-pic active" margin-top>
+      <img src="../../assets/new_york.jpg" alt="" (click)="getLocationMap()"/>
       <p>New York</p>
       <span>USA</span>
       <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
     </ion-col>
 
-    <ion-col text-center class="city-pic active" margin-top>
+    <ion-col text-center class="city-pic" margin-top>
       <img src="../../assets/london.jpg" alt=""/>
       <p>London</p>
       <span>UK</span>
