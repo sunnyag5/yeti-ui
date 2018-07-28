@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AttendingPage } from "../attending/attending";
 import { EventlistPage } from "../eventlist/eventlist";
 import { SharePage } from "../share/share";
+import { TicketDetailPage } from "../ticket-detail/ticket-detail";
 
 /**
  * Generated class for the EventPage page.
@@ -35,6 +36,10 @@ export class EventPage {
 
   shareEvent() {
     this.navCtrl.setRoot(SharePage);
+  }
+
+  getTicket() {
+    this.navCtrl.setRoot(TicketDetailPage);
   }
 
 }

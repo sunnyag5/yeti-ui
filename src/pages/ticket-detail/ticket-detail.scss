@@ -1,0 +1,89 @@
+page-ticket-detail {
+  ion-header {
+    border: 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+  }
+  .toolbar-background-md, .toolbar-background-ios {
+    background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
+  }
+  .toolbar-title-md {
+    letter-spacing: 1px;
+  }
+  /*ion-segment-button {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }*/
+  ion-card {
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    border-radius: 10px !important;
+  }
+  .left-col {
+    background-color: color($colors, lightest);
+    h1 {
+      font-size: 400% !important;
+      line-height: 100px;
+    }
+  }
+  .ticket-select {
+    background-color: color($colors, theme1);
+    h1 {
+      color: color($colors, lightest) !important;
+    }
+  }
+  .mid-col {
+    letter-spacing: 1px;
+    h2 {
+      font-weight: bold !important;
+    }
+  }
+  .right-col {
+    ion-col:first-child {
+      border-left: 2px solid color($colors, lightest);
+      border-bottom: 2px solid color($colors, lightest);
+    }
+    ion-col:last-child {
+      border-left: 2px solid color($colors, lightest);
+    }
+    button {
+      font-size: 130%;
+      ion-icon {
+        font-weight: bold !important;
+      }
+    }
+  }
+  .nextpage {
+    position: relative;
+    bottom: 7px;
+    z-index: 9999;
+    button {
+      font-size: 12px;
+      background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
+      letter-spacing: 2px;
+      box-shadow: 0 5px 20px rgba(136, 136, 136, 0.6);
+      padding: 20px 35px 20px 35px;
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .toolbar-title-md {
+      font-size: 2.5rem !important;
+    }
+    .mid-col {
+      font-size: 160%;
+      h2 {
+        font-size: 120%;
+      }
+    }
+    .right-col {
+      button {
+        font-size: 220% !important;
+      }
+    }
+    .nextpage {
+      button {
+        font-size: 22px !important;
+        padding: 35px 60px 35px 60px !important;
+      }
+    }
+  }
+}

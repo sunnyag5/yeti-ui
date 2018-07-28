@@ -12,6 +12,7 @@ import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { SharePage } from "../pages/share/share";
 import { TabsPage } from '../pages/tabs/tabs';
+import { TicketDetailPage } from "../pages/ticket-detail/ticket-detail";
 
 @Component({
   templateUrl: 'app.html'

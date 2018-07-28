@@ -1,0 +1,461 @@
+<!--
+  Generated template for the TicketDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-toolbar>
+        <ion-buttons left margin-left>
+            <button ion-button [large] (click)="goBack()">
+                <ion-icon name="md-close"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons left no-margin>
+            <button ion-button icon-only>
+            </button>
+        </ion-buttons>
+        <ion-title text-center>Ticket Detail</ion-title>
+        <ion-buttons end no-margin>
+            <button ion-button [small]>
+                Clear
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+
+    <ion-segment [(ngModel)]="date">
+        <ion-segment-button value="4Aug">
+            Sat<br/>4 Aug
+        </ion-segment-button>
+        <ion-segment-button value="5Aug">
+            Sun<br/>5 Aug
+        </ion-segment-button>
+        <ion-segment-button value="6Aug">
+            Mon<br/>6 Aug
+        </ion-segment-button>
+    </ion-segment>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <div [ngSwitch]="date">
+
+        <div [hidden]="date !== '4Aug'">
+
+            <h5 ion-text color="dark" margin>WHAT TICKETS WOULD YOU LIKE?</h5>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col">
+                                <h1 ion-text color="darker">0</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="darker" margin-top>Normal Ticket</h2>
+                                <span ion-text color="darker">4:30 PM until 6:30 PM</span><br/>
+                                <span ion-text color="theme1">Sold out</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <!--<ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="darker">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="darker">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>-->
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col ticket-select">
+                                <h1 ion-text color="darker">3</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Vip Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 6:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $240</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col">
+                                <h1 ion-text color="darker">0</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Normal Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 7:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $0</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col">
+                                <h1 ion-text color="darker">0</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Vip Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 7:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $0</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <div class="nextpage" text-center margin-top>
+                <button ion-button round>Purchase - $240</button>
+            </div>
+
+        </div>
+
+        <div [hidden]="date !== '5Aug'">
+
+            <h5 ion-text color="dark" margin>WHAT TICKETS WOULD YOU LIKE?</h5>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col">
+                                <h1 ion-text color="darker">0</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="darker" margin-top>Normal Ticket</h2>
+                                <span ion-text color="darker">4:30 PM until 6:30 PM</span><br/>
+                                <span ion-text color="theme1">Sold out</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <!--<ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="darker">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="darker">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>-->
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col">
+                                <h1 ion-text color="darker">0</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Vip Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 6:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $0</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col">
+                                <h1 ion-text color="darker">0</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Normal Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 7:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $0</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col ticket-select">
+                                <h1 ion-text color="darker">2</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Vip Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 7:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $160</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <div class="nextpage" text-center margin-top>
+                <button ion-button round>Purchase - $160</button>
+            </div>
+
+        </div>
+
+        <div [hidden]="date !== '6Aug'">
+
+            <h5 ion-text color="dark" margin>WHAT TICKETS WOULD YOU LIKE?</h5>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col">
+                                <h1 ion-text color="darker">0</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="darker" margin-top>Normal Ticket</h2>
+                                <span ion-text color="darker">4:30 PM until 6:30 PM</span><br/>
+                                <span ion-text color="theme1">Sold out</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <!--<ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="darker">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="darker">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>-->
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col">
+                                <h1 ion-text color="darker">0</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Vip Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 6:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $0</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col ticket-select">
+                                <h1 ion-text color="darker">2</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Normal Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 7:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $160</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card margin-vertical>
+
+                <ion-card-content no-padding no-margin>
+                    <ion-grid>
+                        <ion-row no-margin>
+                            <ion-col text-center class="left-col ticket-select">
+                                <h1 ion-text color="darker">2</h1>
+                            </ion-col>
+                            <ion-col col-7 padding-left class="mid-col">
+                                <h2 ion-text color="dark" margin-top>Vip Ticket</h2>
+                                <span ion-text color="dark">4:30 PM until 7:30 PM</span><br/>
+                                <span ion-text color="theme1">x $80 = $160</span>
+                            </ion-col>
+                            <ion-col class="right-col">
+                                <ion-row>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-add"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                    <ion-col col-12 text-center>
+                                        <button ion-button [clear]="true" color="theme1">
+                                            <ion-icon name="md-remove"></ion-icon>
+                                        </button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <div class="nextpage" text-center margin-top>
+                <button ion-button round>Purchase - $320</button>
+            </div>
+
+        </div>
+
+    </div>
+</ion-content>
