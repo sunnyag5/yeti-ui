@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-    <ion-toolbar>
+    <ion-navbar>
         <ion-buttons left margin-left>
             <button ion-button [large] (click)="goBack()">
                 <ion-icon name="md-close"></ion-icon>
@@ -22,7 +22,7 @@
                 Clear
             </button>
         </ion-buttons>
-    </ion-toolbar>
+    </ion-navbar>
 
     <ion-segment [(ngModel)]="date">
         <ion-segment-button value="4Aug">
@@ -175,8 +175,8 @@
                 </ion-card-content>
             </ion-card>
 
-            <div class="nextpage" text-center margin-top>
-                <button ion-button round>Purchase - $240</button>
+            <div class="nextpage" text-center margin-top margin-horizontal>
+                <button ion-button round block>Purchase - $240</button>
             </div>
 
         </div>
@@ -313,8 +313,8 @@
                 </ion-card-content>
             </ion-card>
 
-            <div class="nextpage" text-center margin-top>
-                <button ion-button round>Purchase - $160</button>
+            <div class="nextpage" text-center margin-top margin-horizontal>
+                <button ion-button round block (click)="purchaseTicket()">Purchase - $160</button>
             </div>
 
         </div>
@@ -451,8 +451,8 @@
                 </ion-card-content>
             </ion-card>
 
-            <div class="nextpage" text-center margin-top>
-                <button ion-button round>Purchase - $320</button>
+            <div class="nextpage" text-center margin-top margin-horizontal>
+                <button ion-button round block>Purchase - $320</button>
             </div>
 
         </div>
