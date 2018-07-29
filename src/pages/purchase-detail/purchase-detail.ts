@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TicketDetailPage } from "../ticket-detail/ticket-detail";
+import { TicketConfirmDetailPage } from "../ticket-confirm-detail/ticket-confirm-detail";
 
 /**
  * Generated class for the PurchaseDetailPage page.
@@ -25,6 +26,10 @@ export class PurchaseDetailPage {
 
   goBack() {
     this.navCtrl.setRoot(TicketDetailPage);
+  }
+
+  getTicket() {
+    this.navCtrl.setRoot(TicketConfirmDetailPage);
   }
 
 }

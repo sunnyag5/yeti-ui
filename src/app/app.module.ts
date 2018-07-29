@@ -19,6 +19,7 @@ import { SharePage } from "../pages/share/share";
 import { SignupPage } from "../pages/signup/signup";
 import { TabsPage } from '../pages/tabs/tabs';
 import { TicketDetailPage } from "../pages/ticket-detail/ticket-detail";
+import { TicketConfirmDetailPage } from "../pages/ticket-confirm-detail/ticket-confirm-detail";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -41,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SharePage,
     SignupPage,
     TabsPage,
-    TicketDetailPage
+    TicketDetailPage,
+    TicketConfirmDetailPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SharePage,
     SignupPage,
     TabsPage,
-    TicketDetailPage
+    TicketDetailPage,
+    TicketConfirmDetailPage
   ],
   providers: [
     StatusBar,
