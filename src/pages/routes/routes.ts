@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { EventPage } from "../event/event";
 
 /**
  * Generated class for the RoutesPage page.
@@ -20,6 +21,10 @@ export class RoutesPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RoutesPage');
+  }
+
+  goBack() {
+    this.navCtrl.setRoot(EventPage);
   }
 
 }
