@@ -15,6 +15,7 @@ import { HashtagPage } from "../pages/hashtag/hashtag";
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from "../pages/login/login";
 import { PurchaseDetailPage } from "../pages/purchase-detail/purchase-detail";
+import { RoutesPage } from "../pages/routes/routes";
 import { SharePage } from "../pages/share/share";
 import { SignupPage } from "../pages/signup/signup";
 import { TabsPage } from '../pages/tabs/tabs';
@@ -39,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     LoginPage,
     PurchaseDetailPage,
+    RoutesPage,
     SharePage,
     SignupPage,
     TabsPage,
@@ -64,6 +66,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     LoginPage,
     PurchaseDetailPage,
+    RoutesPage,
     SharePage,
     SignupPage,
     TabsPage,

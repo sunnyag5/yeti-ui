@@ -4,6 +4,7 @@ import { AttendingPage } from "../attending/attending";
 import { EventlistPage } from "../eventlist/eventlist";
 import { SharePage } from "../share/share";
 import { TicketDetailPage } from "../ticket-detail/ticket-detail";
+import { RoutesPage } from "../routes/routes";
 
 /**
  * Generated class for the EventPage page.
@@ -40,6 +41,10 @@ export class EventPage {
 
   getTicket() {
     this.navCtrl.setRoot(TicketDetailPage);
+  }
+
+  getRoutes() {
+    this.navCtrl.setRoot(RoutesPage);
   }
 
 }
