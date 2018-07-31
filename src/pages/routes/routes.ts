@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { EventPage } from "../event/event";
+import { Line_2SubwayPage } from "../line-2-subway/line-2-subway";
 
 /**
  * Generated class for the RoutesPage page.
@@ -25,6 +26,10 @@ export class RoutesPage {
 
   goBack() {
     this.navCtrl.setRoot(EventPage);
+  }
+
+  checkRoute() {
+    this.navCtrl.setRoot(Line_2SubwayPage);
   }
 
 }

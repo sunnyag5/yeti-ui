@@ -13,6 +13,7 @@ import { EventlistPage } from "../pages/eventlist/eventlist";
 import { FilterPage } from "../pages/filter/filter";
 import { HashtagPage } from "../pages/hashtag/hashtag";
 import { HomePage } from '../pages/home/home';
+import { Line_2SubwayPage } from "../pages/line-2-subway/line-2-subway";
 import { LoginPage } from "../pages/login/login";
 import { PurchaseDetailPage } from "../pages/purchase-detail/purchase-detail";
 import { RoutesPage } from "../pages/routes/routes";
@@ -38,6 +39,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FilterPage,
     HashtagPage,
     HomePage,
+    Line_2SubwayPage,
     LoginPage,
     PurchaseDetailPage,
     RoutesPage,
@@ -64,6 +66,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FilterPage,
     HashtagPage,
     HomePage,
+    Line_2SubwayPage,
     LoginPage,
     PurchaseDetailPage,
     RoutesPage,
