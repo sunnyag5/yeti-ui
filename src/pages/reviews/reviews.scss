@@ -1,0 +1,80 @@
+page-reviews {
+  ion-header {
+    border: 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+  }
+  .toolbar-background-md, .toolbar-background-ios {
+    background: linear-gradient(90deg, color($colors, theme1), color($colors, theme2));
+  }
+  .toolbar-title-md {
+    letter-spacing: 1px;
+  }
+  .review {
+    h5 {
+      font-weight: bold !important;
+      font-size: 95%;
+      letter-spacing: 1px;
+    }
+    ion-icon {
+      font-size: 90%;
+    }
+    span, a {
+      font-size: 90%;
+    }
+    a {
+      text-decoration: none;
+    }
+    .like-unlike {
+      span, ion-icon {
+        font-weight: bold !important;
+      }
+    }
+  }
+  .rating-review {
+    width: 100% !important;
+    background: color($colors, lightest);
+    position: fixed !important;
+    bottom: 50px;
+    box-shadow: 0 -7px 20px rgba(136, 136, 136, 0.1) !important;
+  }
+  .ratings {
+    ion-icon {
+      font-size: 30px;
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .toolbar-title-md {
+      font-size: 2.5rem !important;
+    }
+    .review {
+      ion-avatar {
+        img {
+          width: 80px !important;
+          height: 80px !important;
+        }
+      }
+      h5 {
+        font-size: 160% !important;
+      }
+      ion-icon {
+        font-size: 150%;
+      }
+      span, a {
+        font-size: 150%;
+      }
+    }
+    .write-review {
+      ion-input {
+        font-size: 160%;
+      }
+      ion-icon {
+        font-size: 160%;
+      }
+    }
+    .ratings {
+      ion-icon {
+        font-size: 60px !important;
+      }
+    }
+  }
+}

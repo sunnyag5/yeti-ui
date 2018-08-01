@@ -16,6 +16,7 @@ import { HomePage } from '../pages/home/home';
 import { Line_2SubwayPage } from "../pages/line-2-subway/line-2-subway";
 import { LoginPage } from "../pages/login/login";
 import { PurchaseDetailPage } from "../pages/purchase-detail/purchase-detail";
+import { ReviewsPage } from "../pages/reviews/reviews";
 import { RoutesPage } from "../pages/routes/routes";
 import { SharePage } from "../pages/share/share";
 import { SignupPage } from "../pages/signup/signup";
@@ -42,6 +43,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Line_2SubwayPage,
     LoginPage,
     PurchaseDetailPage,
+    ReviewsPage,
     RoutesPage,
     SharePage,
     SignupPage,
@@ -69,6 +71,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Line_2SubwayPage,
     LoginPage,
     PurchaseDetailPage,
+    ReviewsPage,
     RoutesPage,
     SharePage,
     SignupPage,
