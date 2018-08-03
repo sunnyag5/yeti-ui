@@ -1,0 +1,522 @@
+<!--
+  Generated template for the UserProfile2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title>user-profile2</ion-title>
+  </ion-navbar>
+
+</ion-header>-->
+
+
+<ion-content>
+
+    <img src="../../assets/user1.png" alt="" class="profile-pic"/>
+
+    <div class="setting-notification">
+
+        <img src="../../assets/washington-dc.jpg" alt=""/>
+
+        <button ion-button [clear]="true" class="back-arrow-icon" (click)="goBack()">
+            <ion-icon name="arrow-back"></ion-icon>
+        </button>
+
+        <button ion-button [clear]="true" class="notification">
+            <ion-icon name="notifications"></ion-icon>
+        </button>
+
+        <button ion-button [clear]="true" class="setting">
+            <ion-icon name="settings"></ion-icon>
+        </button>
+
+    </div>
+
+    <div padding-horizontal no-margin>
+        <ion-card class="user-profile">
+
+            <ion-card-content text-center padding-top>
+
+                <h3 ion-text margin-top color="dark">Hieu Le</h3>
+
+                <h4 ion-text color="darker">Washington, DC</h4>
+
+                <button ion-button [outline]="true" [round]="true" margin-top color="darker">INBOX</button>
+
+                <button ion-button [round]="true" margin-top color="theme1">REWARDS - $15</button>
+
+                <hr margin-vertical color="darker"/>
+
+                <ion-row>
+                    <ion-col col-6 text-right>
+                        <h4 ion-text color="dark">1.5M <span ion-text color="darker">followers</span></h4>
+                    </ion-col>
+
+                    <ion-col col-6 text-left>
+                        <h4 ion-text color="dark">25 <span ion-text color="darker">following</span></h4>
+                    </ion-col>
+                </ion-row>
+
+                <h4 ion-text margin-top text-left color="darker">Interested in:</h4>
+
+                <div text-left margin-right>
+                    <span ion-text color="dark" class="event-hashtag">#art #festival #fashion #expo #culture #food #sport #nighlife</span>
+                </div>
+
+            </ion-card-content>
+
+        </ion-card>
+    </div>
+
+    <ion-segment [(ngModel)]="activities" no-margin>
+        <ion-segment-button value="activity">
+            Activity
+        </ion-segment-button>
+        <ion-segment-button value="tickets">
+            Tickets
+        </ion-segment-button>
+        <ion-segment-button value="saved">
+            Saved
+        </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="activities">
+
+        <div [hidden]="activities !== 'activity'" class="activity">
+
+            <ion-row margin-top margin-right>
+                <ion-col col-2 text-center>
+                    <ion-icon name="exit" color="dark"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6 text-left>
+                    <span ion-text color="dark">Joined the list:</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span ion-text color="darker">10 Mins Ago</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-right>
+                <ion-col col-2></ion-col>
+
+                <ion-col col-4>
+                    <img src="../../assets/fashion-event1.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-6>
+                    <span ion-text color="dark"
+                          class="event-heading">&quot;Bottled Art&quot; Wine Painting Night</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-top margin-right>
+                <ion-col col-2 text-center>
+                    <ion-icon name="cart" color="dark"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6 text-left>
+                    <span ion-text color="dark">Bought Tickets:</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span ion-text color="darker">Mar, 06 2018</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-right>
+                <ion-col col-2></ion-col>
+
+                <ion-col col-4>
+                    <img src="../../assets/amc-events.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-6>
+                    <span ion-text color="dark" class="event-heading">AMC Black Ticket</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-top margin-right>
+                <ion-col col-2 text-center>
+                    <ion-icon name="cart" color="dark"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6 text-left>
+                    <span ion-text color="dark">Bought Tickets:</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span ion-text color="darker">Mar, 03 2018</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-right>
+                <ion-col col-2></ion-col>
+
+                <ion-col col-4>
+                    <img src="../../assets/wwe-event.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-6>
+                    <span ion-text color="dark" class="event-heading">Win 2 tickets to WWE @ MSC</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-top margin-right>
+                <ion-col col-2 text-center>
+                    <ion-icon name="exit" color="dark"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6 text-left>
+                    <span ion-text color="dark">Joined the list:</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span ion-text color="darker">Mar, 03 2018</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-right>
+                <ion-col col-2></ion-col>
+
+                <ion-col col-4>
+                    <img src="../../assets/nightlife-event.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-6>
+                    <span ion-text color="dark"
+                          class="event-heading">Quiet Clubbing VIP Heated Rooftop Party</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-top margin-right>
+                <ion-col col-2 text-center>
+                    <ion-icon name="exit" color="dark"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6 text-left>
+                    <span ion-text color="dark">Joined the list:</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span ion-text color="darker">10 Mins Ago</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-right>
+                <ion-col col-2></ion-col>
+
+                <ion-col col-4>
+                    <img src="../../assets/fashion-event1.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-6>
+                    <span ion-text color="dark"
+                          class="event-heading">&quot;Bottled Art&quot; Wine Painting Nigh</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-top margin-right>
+                <ion-col col-2 text-center>
+                    <ion-icon name="cart" color="dark"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6 text-left>
+                    <span ion-text color="dark">Bought Tickets:</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span ion-text color="darker">Mar, 06 2018</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-right>
+                <ion-col col-2></ion-col>
+
+                <ion-col col-4>
+                    <img src="../../assets/amc-events.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-6>
+                    <span ion-text color="dark" class="event-heading">AMC Black Ticket</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-top margin-right>
+                <ion-col col-2 text-center>
+                    <ion-icon name="cart" color="dark"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6 text-left>
+                    <span ion-text color="dark">Bought Tickets:</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span ion-text color="darker">Mar, 03 2018</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-right>
+                <ion-col col-2></ion-col>
+
+                <ion-col col-4>
+                    <img src="../../assets/wwe-event.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-6>
+                    <span ion-text color="dark" class="event-heading">Win 2 tickets to WWE @ MSC</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-top margin-right>
+                <ion-col col-2 text-center>
+                    <ion-icon name="exit" color="dark"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6 text-left>
+                    <span ion-text color="dark">Joined the list:</span>
+                </ion-col>
+
+                <ion-col col-4 text-right>
+                    <span ion-text color="darker">Mar, 03 2018</span>
+                </ion-col>
+            </ion-row>
+
+            <ion-row margin-right>
+                <ion-col col-2></ion-col>
+
+                <ion-col col-4>
+                    <img src="../../assets/nightlife-event.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-6>
+                    <span ion-text color="dark"
+                          class="event-heading">Quiet Clubbing VIP Heated Rooftop Party</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+            </ion-row>
+
+        </div>
+
+        <div [hidden]="activities !== 'tickets'" class="tickets">
+
+            <ion-row margin-top margin-horizontal>
+
+                <ion-col col-4>
+                    <img src="../../assets/fashion-event1.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-8>
+                    <span ion-text color="dark"
+                          class="event-heading">&quot;Bottled Art&quot; Wine Painting Night</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row margin-top margin-horizontal>
+
+                <ion-col col-4>
+                    <img src="../../assets/amc-events.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-8>
+                    <span ion-text color="dark"
+                          class="event-heading">AMC Black Ticket</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row margin-top margin-horizontal>
+
+                <ion-col col-4>
+                    <img src="../../assets/wwe-event.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-8>
+                    <span ion-text color="dark"
+                          class="event-heading">Win 2 tickets to WWE @ MSG</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row margin-top margin-horizontal>
+
+                <ion-col col-4>
+                    <img src="../../assets/nightlife-event.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-8>
+                    <span ion-text color="dark"
+                          class="event-heading">Quiet Clubbing VIP Heated Rooftop Party</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row margin-top margin-horizontal>
+
+                <ion-col col-4>
+                    <img src="../../assets/fashion-event1.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-8>
+                    <span ion-text color="dark"
+                          class="event-heading">&quot;Bottled Art&quot; Wine Painting Night</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row margin-top margin-horizontal>
+
+                <ion-col col-4>
+                    <img src="../../assets/amc-events.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-8>
+                    <span ion-text color="dark"
+                          class="event-heading">AMC Black Ticket</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row margin-top margin-horizontal>
+
+                <ion-col col-4>
+                    <img src="../../assets/wwe-event.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-8>
+                    <span ion-text color="dark"
+                          class="event-heading">Win 2 tickets to WWE @ MSG</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row margin-top margin-horizontal>
+
+                <ion-col col-4>
+                    <img src="../../assets/nightlife-event.jpg" alt="" class="event-pic" width="120" height="90"/>
+                </ion-col>
+
+                <ion-col col-8>
+                    <span ion-text color="dark"
+                          class="event-heading">Quiet Clubbing VIP Heated Rooftop Party</span><br/>
+                    <span ion-text color="darker" class="event-time" margin-top>Sun, Aug 5 - 4:30 PM EST</span>
+                </ion-col>
+
+            </ion-row>
+
+        </div>
+
+        <div [hidden]="activities !== 'saved'" class="saved">
+
+            <ion-row margin-top>
+
+                <ion-col col-12>
+                    <ion-card>
+                        <img src="../../assets/fashion-event1.jpg" alt="" class="event-pic"/>
+                        <ion-icon name="md-heart" color="theme1" class="like"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+
+                <ion-col col-12>
+                    <ion-card>
+                        <img src="../../assets/amc-events.jpg" alt="" class="event-pic"/>
+                        <ion-icon name="md-heart" color="theme1" class="like"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+
+                <ion-col col-12>
+                    <ion-card>
+                        <img src="../../assets/wwe-event.jpg" alt="" class="event-pic"/>
+                        <ion-icon name="md-heart" color="theme1" class="like"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+
+                <ion-col col-12>
+                    <ion-card>
+                        <img src="../../assets/nightlife-event.jpg" alt="" class="event-pic"/>
+                        <ion-icon name="md-heart" color="theme1" class="like"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+
+                <ion-col col-12>
+                    <ion-card>
+                        <img src="../../assets/fashion-event1.jpg" alt="" class="event-pic"/>
+                        <ion-icon name="md-heart" color="theme1" class="like"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+
+                <ion-col col-12>
+                    <ion-card>
+                        <img src="../../assets/amc-events.jpg" alt="" class="event-pic"/>
+                        <ion-icon name="md-heart" color="theme1" class="like"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+
+                <ion-col col-12>
+                    <ion-card>
+                        <img src="../../assets/wwe-event.jpg" alt="" class="event-pic"/>
+                        <ion-icon name="md-heart" color="theme1" class="like"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+
+                <ion-col col-12>
+                    <ion-card>
+                        <img src="../../assets/nightlife-event.jpg" alt="" class="event-pic"/>
+                        <ion-icon name="md-heart" color="theme1" class="like"></ion-icon>
+                    </ion-card>
+                </ion-col>
+
+            </ion-row>
+
+        </div>
+
+    </div>
+
+</ion-content>

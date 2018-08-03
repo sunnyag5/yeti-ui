@@ -1,4 +1,4 @@
-page-user-profile1 {
+page-user-profile2 {
   .setting-notification {
     position: relative;
     button {
@@ -48,7 +48,7 @@ page-user-profile1 {
     position: relative !important;
     top: -85px !important;
   }
-  .activity {
+  .activity, .tickets, .saved {
     position: relative !important;
     top: -85px !important;
     ion-icon {
@@ -65,6 +65,17 @@ page-user-profile1 {
       font-size: 110%;
     }
   }
+  .saved {
+    ion-card {
+      position: relative;
+      .like {
+        position: absolute;
+        top: 7%;
+        right: 7%;
+        font-size: 200%;
+      }
+    }
+  }
   @media only screen and (max-width: 375px) {
     .profile-pic {
       top: 145px !important;
@@ -74,10 +85,20 @@ page-user-profile1 {
     .profile-pic {
       top: 135px !important;
     }
+    .user-profile {
+      button {
+        font-size: 90% !important;
+      }
+    }
   }
   @media only screen and (max-width: 320px) {
     .profile-pic {
       top: 100px !important;
+    }
+    .user-profile {
+      button {
+        font-size: 70% !important;
+      }
     }
   }
   @media only screen and (min-width: 760px) {
@@ -110,7 +131,7 @@ page-user-profile1 {
       height: 140px !important;
       top: 260px !important;
     }
-    .activity {
+    .activity, .tickets {
       ion-icon {
         font-size: 230% !important;
       }
@@ -123,6 +144,16 @@ page-user-profile1 {
       }
       .event-time {
         font-size: 180% !important;
+      }
+    }
+    .saved {
+      .event-pic {
+        width: 100% !important;
+      }
+      ion-card {
+        .like {
+          font-size: 300% !important;
+        }
       }
     }
   }

@@ -24,6 +24,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { TicketDetailPage } from "../pages/ticket-detail/ticket-detail";
 import { TicketConfirmDetailPage } from "../pages/ticket-confirm-detail/ticket-confirm-detail";
 import { UserProfile1Page } from "../pages/user-profile1/user-profile1";
+import { UserProfile2Page } from "../pages/user-profile2/user-profile2";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -51,7 +52,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     TicketDetailPage,
     TicketConfirmDetailPage,
-    UserProfile1Page
+    UserProfile1Page,
+    UserProfile2Page
   ],
   imports: [
     BrowserModule,
@@ -80,7 +82,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     TicketDetailPage,
     TicketConfirmDetailPage,
-    UserProfile1Page
+    UserProfile1Page,
+    UserProfile2Page
   ],
   providers: [
     StatusBar,
