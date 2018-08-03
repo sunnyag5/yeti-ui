@@ -23,6 +23,7 @@ import { SignupPage } from "../pages/signup/signup";
 import { TabsPage } from '../pages/tabs/tabs';
 import { TicketDetailPage } from "../pages/ticket-detail/ticket-detail";
 import { TicketConfirmDetailPage } from "../pages/ticket-confirm-detail/ticket-confirm-detail";
+import { UserProfile1Page } from "../pages/user-profile1/user-profile1";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -49,7 +50,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SignupPage,
     TabsPage,
     TicketDetailPage,
-    TicketConfirmDetailPage
+    TicketConfirmDetailPage,
+    UserProfile1Page
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SignupPage,
     TabsPage,
     TicketDetailPage,
-    TicketConfirmDetailPage
+    TicketConfirmDetailPage,
+    UserProfile1Page
   ],
   providers: [
     StatusBar,
