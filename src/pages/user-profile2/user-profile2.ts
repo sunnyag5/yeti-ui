@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LoginPage } from "../login/login";
+import { NotificationsPage } from "../notifications/notifications";
 
 /**
  * Generated class for the UserProfile2Page page.
@@ -23,6 +25,14 @@ export class UserProfile2Page {
   ionViewDidLoad() {
       this.activities = 'activity';
     console.log('ionViewDidLoad UserProfile2Page');
+  }
+
+    goBack() {
+        this.navCtrl.setRoot(LoginPage);
+    }
+
+  getNotifications() {
+      this.navCtrl.push(NotificationsPage);
   }
 
 }
